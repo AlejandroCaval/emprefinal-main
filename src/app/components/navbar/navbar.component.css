@@ -1,0 +1,88 @@
+.navbar {
+  background: linear-gradient(90deg, #000000, #020202);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+  transition: background 0.3s ease;
+}
+
+.navbar-brand {
+  color: #fff;
+  text-shadow: 0 0 5px #000000;
+}
+
+.navbar-brand:hover {
+  color: #ffd6f7;
+}
+
+.nav-link,
+.navbar-toggler-icon {
+  color: #ffd6f7 !important;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+/* Colores específicos para cada tipo de profesional */
+.nav-link.text-success {
+  color: #28a745 !important; /* verde para Abogados */
+}
+
+.nav-link.text-primary {
+  color: #0d6efd !important; /* azul para Médicos */
+}
+
+.nav-link.text-purple {
+  color: #b23eff !important; /* morado para Arquitectos */
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: #fff !important;
+  text-shadow: 0 0 10px #f107a3;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+.dropdown-menu.dropdown-menu-dark {
+  background-color: #7b2ff7;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 15px rgba(241, 7, 163, 0.5);
+}
+
+.dropdown-item {
+  color: #ffd6f7;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: #f107a3;
+  color: #fff;
+}
+
+.btn-outline-light {
+  border-color: #ffd6f7;
+  color: #ffd6f7;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  background-color: #f107a3;
+  border-color: #f107a3;
+  color: #fff;
+}
+
+.dropdown-menu {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
